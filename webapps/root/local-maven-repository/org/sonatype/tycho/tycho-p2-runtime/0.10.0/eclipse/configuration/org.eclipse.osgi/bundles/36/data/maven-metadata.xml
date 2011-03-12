@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><metadata>
+  <groupId>org.sonatype.tycho.tycho-p2-runtime.0.10.0.eclipse.configuration.org.eclipse.osgi.bundles.36</groupId>
+  <artifactId>data</artifactId>
+  <versioning>
+    <latest>1629005314</latest>
+    <release>1629005314</release>
+    <versions>
+      <version>1629005314</version>
+      <version>451898250</version>
+      <version>822506604</version>
+    </versions>
+    <lastUpdated>20110311174314</lastUpdated>
+  </versioning>
+</metadata>

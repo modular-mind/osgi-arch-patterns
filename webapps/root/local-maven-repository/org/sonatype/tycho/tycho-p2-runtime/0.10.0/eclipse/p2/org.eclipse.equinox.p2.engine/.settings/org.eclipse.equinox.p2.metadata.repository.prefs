@@ -1,0 +1,23 @@
+#Fri Mar 11 17:38:12 CST 2011
+repositories/http\:__localhost\:8080_local-p2-repository/suffix=content.xml
+repositories/file\:_Users_Patrick_Desktop_osgi-arch-patterns_webapps_root_labs_lab-3_com.example.app.product_target_targetMetadataRepository/enabled=false
+repositories/file\:_Users_Patrick_Desktop_osgi-arch-patterns_webapps_root_labs_lab-3_com.example.app.product_target_targetMetadataRepository/isSystem=true
+repositories/http\:__localhost\:8080_labs_lab-4_com.example.app.utility.p2_target_site/uri=http\://localhost\:8080/labs/lab-4/com.example.app.utility.p2/target/site
+repositories/http\:__localhost\:8080_labs_lab-4_com.example.app.utility.p2_target_site/name=com.example.app.utility.p2
+repositories/file\:_Users_Patrick_Desktop_osgi-arch-patterns_webapps_root_labs_lab-3_com.example.app.product_target_targetMetadataRepository/name=TychoTargetPlatform
+repositories/http\:__localhost\:8080_local-p2-repository/name=file\:/Users/Patrick/Desktop/p2repo
+eclipse.preferences.version=1
+repositories/file\:_Users_Patrick_Desktop_osgi-arch-patterns_webapps_root_labs_lab-3_com.example.app.product_target_targetMetadataRepository/uri=file\:/Users/Patrick/Desktop/osgi-arch-patterns/webapps/root/labs/lab-3/com.example.app.product/target/targetMetadataRepository/
+repositories/http\:__localhost\:8080_labs_lab-4_com.example.app.utility.p2_target_site/type=org.eclipse.equinox.internal.p2.metadata.repository.LocalMetadataRepository
+repositories/http\:__localhost\:8080_labs_lab-4_com.example.app.utility.p2_target_site/version=1.0.0
+repositories/file\:_Users_Patrick_Desktop_osgi-arch-patterns_webapps_root_labs_lab-3_com.example.app.product_target_targetMetadataRepository/type=org.eclipse.equinox.internal.p2.metadata.repository.LocalMetadataRepository
+repositories/http\:__localhost\:8080_local-p2-repository/type=org.eclipse.equinox.internal.p2.metadata.repository.LocalMetadataRepository
+repositories/http\:__localhost\:8080_local-p2-repository/version=1.0.0
+repositories/http\:__localhost\:8080_labs_lab-4_com.example.app.utility.p2_target_site/enabled=true
+repositories/file\:_Users_Patrick_Desktop_osgi-arch-patterns_webapps_root_labs_lab-3_com.example.app.product_target_targetMetadataRepository/suffix=content.xml
+repositories/http\:__localhost\:8080_local-p2-repository/isSystem=false
+repositories/http\:__localhost\:8080_local-p2-repository/enabled=true
+repositories/http\:__localhost\:8080_local-p2-repository/uri=http\://localhost\:8080/local-p2-repository
+repositories/http\:__localhost\:8080_labs_lab-4_com.example.app.utility.p2_target_site/isSystem=false
+repositories/http\:__localhost\:8080_labs_lab-4_com.example.app.utility.p2_target_site/suffix=content.xml
+repositories/file\:_Users_Patrick_Desktop_osgi-arch-patterns_webapps_root_labs_lab-3_com.example.app.product_target_targetMetadataRepository/version=0.0.1

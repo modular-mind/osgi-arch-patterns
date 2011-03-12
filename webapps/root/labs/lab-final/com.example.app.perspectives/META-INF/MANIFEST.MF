@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Perspectives
+Bundle-SymbolicName: com.example.app.perspectives; singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: com.example.app.perspectives.Activator
+Bundle-Vendor: EXAMPLE
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ com.example.app.utility;bundle-version="1.0.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-ActivationPolicy: lazy

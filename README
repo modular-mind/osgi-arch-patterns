@@ -1,0 +1,27 @@
+Architecture Patterns and Code Templates for Enterprise RCP Applications
+========================================================================
+
+Welcome to Architecture Patterns and Code Templates for Enterprise RCP
+Applications!
+
+http://www.eclipsecon.org/2011/sessions/?page=sessions&id=2329
+
+IMPORTANT: Use Chrome, Firefox, or Safari if you want everything to work.
+
+ wHow to use this:
+----------------
+
+To use this distribution, first start the Jetty web server using:
+
+   java -jar start.jar
+
+Load the home page at http://localhost:8080. The home page contains instructions for the labs in PDF format. Click on the link for Lab 1 and start following the instructions.
+
+If you have any questions about the labs, feel free to contact Dave Orme or Patrick Paulin.
+
+djo@coconut-palm-software.com
+patrick@modumind.com
+
+Enjoy the labs!
+
+--- Dave and Patrick

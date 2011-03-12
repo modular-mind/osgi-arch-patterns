@@ -1,0 +1,5 @@
+#Eclipse Product File
+#Tue Sep 28 14:09:39 EDT 2010
+version=0.10.0
+name=org.sonatype.tycho.p2
+id=tycho-p2-runtime

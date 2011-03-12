@@ -1,0 +1,10 @@
+!SESSION 2011-03-11 17:38:15.030 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_22
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -application org.eclipse.equinox.p2.publisher.UpdateSitePublisher -source /Users/Patrick/Desktop/osgi-arch-patterns/webapps/root/labs/lab-4/com.example.app.perspectives.p2/target/site -metadataRepository file:/Users/Patrick/Desktop/osgi-arch-patterns/webapps/root/labs/lab-4/com.example.app.perspectives.p2/target/site/ -metadataRepositoryName com.example.app.perspectives.p2 -artifactRepository file:/Users/Patrick/Desktop/osgi-arch-patterns/webapps/root/labs/lab-4/com.example.app.perspectives.p2/target/site/ -artifactRepositoryName com.example.app.perspectives.p2 Artifacts -noDefaultIUs -compress
+Command-line arguments:  -application org.eclipse.equinox.p2.publisher.UpdateSitePublisher -source /Users/Patrick/Desktop/osgi-arch-patterns/webapps/root/labs/lab-4/com.example.app.perspectives.p2/target/site -metadataRepository file:/Users/Patrick/Desktop/osgi-arch-patterns/webapps/root/labs/lab-4/com.example.app.perspectives.p2/target/site/ -metadataRepositoryName com.example.app.perspectives.p2 -artifactRepository file:/Users/Patrick/Desktop/osgi-arch-patterns/webapps/root/labs/lab-4/com.example.app.perspectives.p2/target/site/ -artifactRepositoryName com.example.app.perspectives.p2 Artifacts -noDefaultIUs -compress
+
+!ENTRY org.eclipse.core.net 1 0 2011-03-11 17:38:15.748
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences

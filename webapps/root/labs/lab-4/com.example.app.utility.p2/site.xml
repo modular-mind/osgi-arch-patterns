@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/com.example.app.utility.feature_1.0.0.qualifier.jar" id="com.example.app.utility.feature" version="1.0.0.qualifier"/>
+</site>
