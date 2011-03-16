@@ -44,12 +44,12 @@
     copy of this lab by (a) placing the zip file you downloaded into
     the webapps/root folder and (b) having him/her point their web
     browser at the web address corresponding with your wireless
-    network interface.  If you are connected, this address should be
+    network interface.  If you are connected, the correct URL should be
     listed below:</p>
 
-  <blockquote><table border="0">
+  <table border="0">
       <%= sourceUrlTable %>
-  </table></blockquote>
+  </table>
 
   <h2>Prerequisites</h2>
 
