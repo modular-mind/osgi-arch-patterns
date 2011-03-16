@@ -38,7 +38,7 @@
     Licensed under the terms of the 
     <a href="epl-v10.html">Eclipse Public License</a>.</p>
 
-  <h2>Share with your neighbor</h2>
+  <h2>You can share with your neighbor!</h2>
 
   <p>You can give your neighbor a copy of this lab by having them
     point their web browser at the web address below corresponding
