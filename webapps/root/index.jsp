@@ -1,3 +1,4 @@
+<html>
 <%@ page import="java.net.*,java.util.*" %>
 <%
    int serverPort = request.getServerPort();
@@ -21,7 +22,6 @@
       }
    }
    %>
-<html>
 <head>
   <title>Architecture Patterns and Code Templates for Enterprise RCP/OSGi Applications</title>
 </head>
@@ -40,9 +40,10 @@
 
   <h2>You can share with your neighbor!</h2>
 
-  <p>You can give your neighbor a copy of this lab by having them
-    point their web browser at the web address below corresponding
-    with your wireless network interface:</p>
+  <p>You can give your neighbor a copy of this lab by (a) placing
+    the zip file you downloaded into the webapps/root folder and
+    (b) having him/her point their web browser at the web address 
+    below corresponding with your wireless network interface:</p>
 
   <blockquote><table border="0">
       <%= sourceUrlTable %>
