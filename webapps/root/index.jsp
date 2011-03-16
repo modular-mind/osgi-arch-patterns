@@ -62,9 +62,9 @@
   <p>If you are connected to the network, you can give your neighbor a
     copy of this lab by (a) placing the zip file you downloaded into
     the <font face="courier">webapps/root</font> folder and (b) having
-    him/her point their web browser at the web address corresponding
-    with your wireless network interface.  If you are connected, the
-    correct URL should be listed below:</p>
+    your colleague point his/her web browser at the web address
+    corresponding with your wireless network interface.  If you are
+    connected, the correct URL should be listed below:</p>
 
   <table border="0">
       <%= sourceUrlTable %>
