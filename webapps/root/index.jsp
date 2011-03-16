@@ -1,3 +1,26 @@
+<%@ page import="java.net.*,java.util.*" %>
+<%
+   int serverPort = request.getServerPort();
+   Enumeration<NetworkInterface> nets = 
+            NetworkInterface.getNetworkInterfaces();
+
+   String sourceUrlTable="";
+
+   for (NetworkInterface netint : Collections.list(nets)) {
+      String displayName = netint.getDisplayName();
+      if ("lo".equals(displayName)) continue;
+
+      Enumeration<InetAddress> inetAddresses = netint.getInetAddresses();
+   
+      for (InetAddress inetAddress : Collections.list(inetAddresses)) {
+         if (inetAddress instanceof Inet4Address) {
+            sourceUrlTable += "<tr><td>" + displayName + 
+                   ":</td><td>http:/" + inetAddress + ":" + 
+                   serverPort + "/building_block_lab.zip</td></tr>\n";
+         }
+      }
+   }
+   %>
 <html>
 <head>
   <title>Architecture Patterns and Code Templates for Enterprise RCP/OSGi Applications</title>
@@ -14,6 +37,16 @@
   EclipseCon 2011<br/>
     Licensed under the terms of the 
     <a href="epl-v10.html">Eclipse Public License</a>.</p>
+
+  <h2>Share with your neighbor</h2>
+
+  <p>You can give your neighbor a copy of this lab by having them
+    point their web browser at the web address below corresponding
+    with your wireless network interface:</p>
+
+  <blockquote><table border="0">
+      <%= sourceUrlTable %>
+  </table></blockquote>
 
   <h2>Prerequisites</h2>
 
