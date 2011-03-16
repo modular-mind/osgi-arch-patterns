@@ -1,3 +1,22 @@
+<!-- 
+*
+* Enterprise RCP/OSGi Applications Tutorial root HTML file
+*
+* Copyright (c) 2011 David Orme
+* All rights reserved. This program and the accompanying materials
+* are made available under the terms of the Eclipse Public License v1.0
+* which accompanies this distribution, and is available at
+* http://www.eclipse.org/legal/epl-v10.html
+*
+* Contributors:
+*     David Orme - initial implementation
+*
+* Note:
+* Yes, I know this HTML/JSP does a whole lot of deprecated stuff.  It's
+* just a quick-and-dirty way to get lots of tutorial materials out to
+* lots of people as quickly as possible.  :-)
+* 
+-->
 <html>
 <%@ page import="java.net.*,java.util.*" %>
 <%
