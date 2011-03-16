@@ -16,7 +16,7 @@
          if (inetAddress instanceof Inet4Address) {
             sourceUrlTable += "<tr><td>" + displayName + 
                    ":</td><td>http:/" + inetAddress + ":" + 
-                   serverPort + "/building_block_lab.zip</td></tr>\n";
+                   serverPort + "/building_block_tut.zip</td></tr>\n";
          }
       }
    }
