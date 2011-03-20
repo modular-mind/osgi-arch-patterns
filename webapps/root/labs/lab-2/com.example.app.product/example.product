@@ -12,7 +12,7 @@
 
    <windowImages i16="icons/alt_window_16.gif" i32="icons/alt_window_32.gif"/>
 
-   <launcher name="example">
+   <launcher>
       <solaris/>
       <win useIco="false">
          <bmp/>

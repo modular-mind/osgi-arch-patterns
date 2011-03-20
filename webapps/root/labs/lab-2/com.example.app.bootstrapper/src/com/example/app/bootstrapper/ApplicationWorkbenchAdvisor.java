@@ -10,7 +10,7 @@
  *******************************************************************************/
 package com.example.app.bootstrapper;
 
-import org.eclipse.ui.PlatformUI;
+import org.eclipse.jface.dialogs.MessageDialog;
 import org.eclipse.ui.application.IWorkbenchWindowConfigurer;
 import org.eclipse.ui.application.WorkbenchAdvisor;
 import org.eclipse.ui.application.WorkbenchWindowAdvisor;
@@ -24,10 +24,15 @@ public class ApplicationWorkbenchAdvisor extends WorkbenchAdvisor {
 
 	public String getInitialWindowPerspectiveId() {
 		String perspectiveId = System.getProperty("initialWindowPerspectiveId");
-		if (PlatformUI.getWorkbench().getPerspectiveRegistry()
+		if (getWorkbenchConfigurer().getWorkbench().getPerspectiveRegistry()
 				.findPerspectiveWithId(perspectiveId) != null) {
 			return perspectiveId;
 		} else {
+			MessageDialog
+					.openWarning(
+							null,
+							"Startup Warning",
+							"The initial perspective has either not been specified or is not valid.");
 			return null;
 		}
 	}

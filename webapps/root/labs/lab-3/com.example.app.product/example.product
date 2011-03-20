@@ -7,13 +7,13 @@
    </configIni>
 
    <launcherArgs>
-      <vmArgs>-DinitialWindowPerspectiveId=com.example.app.perspectives.perspective</vmArgs>
+      <vmArgs>-DinitialWindowPerspectiveId=com.example.app.perspectives.perspective-DupdateSiteUrl=http://localhost:8080/labs/lab-3/com.example.app.perspectives.p2/target/site</vmArgs>
       <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts</vmArgsMac>
    </launcherArgs>
 
    <windowImages i16="icons/alt_window_16.gif" i32="icons/alt_window_32.gif"/>
 
-   <launcher>
+   <launcher name>
       <solaris/>
       <win useIco="false">
          <bmp/>
