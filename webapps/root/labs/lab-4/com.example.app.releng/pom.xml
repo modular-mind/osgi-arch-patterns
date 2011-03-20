@@ -43,7 +43,7 @@
 						<environment>
 							<os>macosx</os>
 							<ws>cocoa</ws>
-							<arch>x86</arch>
+							<arch>x86_64</arch>
 						</environment>
 					</environments>
 				</configuration>
@@ -51,15 +51,15 @@
 		</plugins>
 	</build>
 	<modules>
+		<module>../com.example.app.product</module>
+		<module>../com.example.app.feature</module>
 		<module>../com.example.app.bootstrapper</module>
 		<module>../com.example.app.bootstrapper.test</module>
-		<module>../com.example.app.feature</module>
-		<module>../com.example.app.product</module>
 	</modules>
 	<pluginRepositories>
 		<pluginRepository>
 			<id>maven-repository</id>
-			<url>http://localhost:8080/local-maven-repository/repository</url>
+			<url>http://localhost:8080/local-maven-repository</url>
 		</pluginRepository>
 	</pluginRepositories>
 	<repositories>
@@ -70,7 +70,7 @@
 		</repository>
 		<repository>
 			<id>maven-repository</id>
-			<url>http://localhost:8080/local-maven-repository/repository</url>
+			<url>http://localhost:8080/local-maven-repository</url>
 		</repository>	
 	</repositories>
 </project>

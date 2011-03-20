@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?compositeArtifactRepository version='1.0.0'?>
+<repository name='Sample Composite Repository'
+    type='org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository' version='1.0.0'>
+  <properties size='1'>
+    <property name='p2.timestamp' value='1243822502440'/>
+  </properties>
+  <children size='2'>
+    <child location='http://localhost:8080/labs/lab-4/com.example.app.perspectives.p2/target/site'/>
+    <child location='http://localhost:8080/labs/lab-4/com.example.app.utility.p2/target/site'/>
+  </children>
+</repository>
