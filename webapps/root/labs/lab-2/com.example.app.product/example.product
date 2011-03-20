@@ -12,6 +12,16 @@
 
    <windowImages i16="icons/alt_window_16.gif" i32="icons/alt_window_32.gif"/>
 
+   <launcher name="example">
+      <solaris/>
+      <win useIco="false">
+         <bmp/>
+      </win>
+   </launcher>
+
+   <vm>
+   </vm>
+
    <plugins>
       <plugin id="com.example.app.bootstrapper"/>
       <plugin id="com.ibm.icu"/>
@@ -42,6 +52,7 @@
    <features>
       <feature id="com.example.app.feature" version="1.0.0.qualifier"/>
       <feature id="org.eclipse.rcp"/>
+      <feature id="org.eclipse.equinox.p2.user.ui"/>
    </features>
 
    <configurations>

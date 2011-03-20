@@ -10,17 +10,25 @@
  *******************************************************************************/
 package com.example.app.bootstrapper;
 
+import org.eclipse.ui.PlatformUI;
 import org.eclipse.ui.application.IWorkbenchWindowConfigurer;
 import org.eclipse.ui.application.WorkbenchAdvisor;
 import org.eclipse.ui.application.WorkbenchWindowAdvisor;
 
 public class ApplicationWorkbenchAdvisor extends WorkbenchAdvisor {
 
-    public WorkbenchWindowAdvisor createWorkbenchWindowAdvisor(IWorkbenchWindowConfigurer configurer) {
-        return new ApplicationWorkbenchWindowAdvisor(configurer);
-    }
+	public WorkbenchWindowAdvisor createWorkbenchWindowAdvisor(
+			IWorkbenchWindowConfigurer configurer) {
+		return new ApplicationWorkbenchWindowAdvisor(configurer);
+	}
 
 	public String getInitialWindowPerspectiveId() {
-		return System.getProperty("initialWindowPerspectiveId");
+		String perspectiveId = System.getProperty("initialWindowPerspectiveId");
+		if (PlatformUI.getWorkbench().getPerspectiveRegistry()
+				.findPerspectiveWithId(perspectiveId) != null) {
+			return perspectiveId;
+		} else {
+			return null;
+		}
 	}
 }

@@ -6,10 +6,9 @@
 	 * an example for how you could install Features from within your
 	 * Application.
 	 *
-	 * A minimal "installer" would call createIUAnyQuery() instead of
-	 * querying for a specific Feature.  Creating a fully-generic
-	 * installer/updater is beyond the scope of this Tutorial, but
-	 * watch bug#337016 for details on an initative to make this easy.
+	 * Creating a fully-generic installer/updater is beyond the scope 
+	 * of this Tutorial, but watch bug#337016 for details on an 
+	 * initiative to make this easy.
 	 */
 	private boolean installNewFeature() throws ProvisionException {
 
