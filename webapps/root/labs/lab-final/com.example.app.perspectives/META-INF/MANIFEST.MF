@@ -6,7 +6,7 @@ Bundle-Version: 1.0.0.qualifier
 Bundle-Activator: com.example.app.perspectives.Activator
 Bundle-Vendor: EXAMPLE
 Require-Bundle: org.eclipse.ui,
- org.eclipse.core.runtime,
- com.example.app.utility;bundle-version="1.0.0"
+ org.eclipse.core.runtime
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Bundle-ActivationPolicy: lazy
+Import-Package: com.example.app.utility
