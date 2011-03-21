@@ -31,7 +31,7 @@
      id="namedview7670"
      showgrid="false"
      inkscape:zoom="0.53873369"
-     inkscape:cx="519.58975"
+     inkscape:cx="285.70796"
      inkscape:cy="382.80919"
      inkscape:window-x="0"
      inkscape:window-y="24"
@@ -6988,21 +6988,21 @@
          y="249.03682">and Server-Side OSGi </tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:35.91513824px;font-style:normal;font-weight:normal;text-align:end;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Arial"
-       x="795.6463"
-       y="513.72278"
+       style="font-size:30.70363998px;font-style:normal;font-weight:normal;text-align:end;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Arial"
+       x="795.57758"
+       y="509.92865"
        id="text85505-4"
        sodipodi:linespacing="125%"><tspan
          id="tspan17712-01"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:end;text-anchor:end;font-family:Arial;-inkscape-font-specification:Arial Bold"
          sodipodi:role="line"
-         x="795.6463"
-         y="513.72278">Please download labs here now:</tspan><tspan
+         x="795.57758"
+         y="509.92865">Labs available on USB or GitHub:</tspan><tspan
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:end;text-anchor:end;font-family:Arial;-inkscape-font-specification:Arial Bold"
          sodipodi:role="line"
-         x="795.6463"
-         y="558.6167"
-         id="tspan15319">http://ip.0.0.1:8080/building_block_tut.zip</tspan></text>
+         x="795.57758"
+         y="548.30823"
+         id="tspan15319">git://github.com/pieceoftheloaf/osgi-arch-patterns.git</tspan></text>
   </g>
   <g
      style="display:none"
@@ -19807,7 +19807,7 @@
              style="text-align:start;text-anchor:start">(Bundle, Feature, Product or P2Repo, Releng project)</tspan></text>
         <path
            transform="matrix(0.79999998,0,0,0.79999998,41.610493,-2.5e-6)"
-           d="m 1139.4778,488.7717 a 7.5080676,7.5080676 0 1 1 -15.0161,0 7.5080676,7.5080676 0 1 1 15.0161,0 z"
+           d="m 1139.4778,488.7717 c 0,4.14659 -3.3615,7.50807 -7.5081,7.50807 -4.1466,0 -7.508,-3.36148 -7.508,-7.50807 0,-4.14659 3.3614,-7.50807 7.508,-7.50807 4.1466,0 7.5081,3.36148 7.5081,7.50807 z"
            sodipodi:ry="7.5080676"
            sodipodi:rx="7.5080676"
            sodipodi:cy="488.7717"
@@ -19917,7 +19917,7 @@
              style="text-align:start;text-anchor:start">(Bundle, Plan, Server config, Releng project)</tspan></text>
         <path
            transform="matrix(0.79999998,0,0,0.79999998,41.610493,-2.5e-6)"
-           d="m 1139.4778,488.7717 a 7.5080676,7.5080676 0 1 1 -15.0161,0 7.5080676,7.5080676 0 1 1 15.0161,0 z"
+           d="m 1139.4778,488.7717 c 0,4.14659 -3.3615,7.50807 -7.5081,7.50807 -4.1466,0 -7.508,-3.36148 -7.508,-7.50807 0,-4.14659 3.3614,-7.50807 7.508,-7.50807 4.1466,0 7.5081,3.36148 7.5081,7.50807 z"
            sodipodi:ry="7.5080676"
            sodipodi:rx="7.5080676"
            sodipodi:cy="488.7717"
@@ -19982,7 +19982,7 @@
              style="text-align:start;text-anchor:start">(Bundle+, Packaging+, Deployment, Releng)</tspan></text>
         <path
            transform="matrix(0.79999998,0,0,0.79999998,41.610493,-2.5e-6)"
-           d="m 1139.4778,488.7717 a 7.5080676,7.5080676 0 1 1 -15.0161,0 7.5080676,7.5080676 0 1 1 15.0161,0 z"
+           d="m 1139.4778,488.7717 c 0,4.14659 -3.3615,7.50807 -7.5081,7.50807 -4.1466,0 -7.508,-3.36148 -7.508,-7.50807 0,-4.14659 3.3614,-7.50807 7.508,-7.50807 4.1466,0 7.5081,3.36148 7.5081,7.50807 z"
            sodipodi:ry="7.5080676"
            sodipodi:rx="7.5080676"
            sodipodi:cy="488.7717"
