@@ -51,6 +51,7 @@
 		</plugins>
 	</build>
 	<modules>
+		<!-- Add child modules here -->
 	</modules>
 	<pluginRepositories>
 		<pluginRepository>
