@@ -51,6 +51,10 @@
 		</plugins>
 	</build>
 	<modules>
+		<module>../com.example.app.bootstrapper.product</module>
+		<module>../com.example.app.bootstrapper.feature</module>
+		<module>../com.example.app.bootstrapper</module>
+		<module>../com.example.app.bootstrapper.test</module>
 	</modules>
 	<pluginRepositories>
 		<pluginRepository>
