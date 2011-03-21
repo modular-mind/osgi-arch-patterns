@@ -22,10 +22,9 @@ public class Activator extends AbstractUIPlugin {
 	// The plug-in ID
 	public static final String PLUGIN_ID = "com.example.app.bootstrapper"; //$NON-NLS-1$
 
-	private static BundleContext context;
-	
 	// The shared instance
 	private static Activator plugin;
+	private static BundleContext context;
 	
 	/**
 	 * The constructor
@@ -62,10 +61,6 @@ public class Activator extends AbstractUIPlugin {
 		return plugin;
 	}
 
-	public static BundleContext getContext() {
-		return context;
-	}
-
 	/**
 	 * Returns an image descriptor for the image file at the given
 	 * plug-in relative path
@@ -75,6 +70,10 @@ public class Activator extends AbstractUIPlugin {
 	 */
 	public static ImageDescriptor getImageDescriptor(String path) {
 		return imageDescriptorFromPlugin(PLUGIN_ID, path);
+	}
+	
+	public static BundleContext getContext() {
+		return Activator.context;
 	}
 	
 	String getMessage() {

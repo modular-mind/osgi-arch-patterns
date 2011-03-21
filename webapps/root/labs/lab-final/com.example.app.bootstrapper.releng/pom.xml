@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.example</groupId>
+	<artifactId>com.example.app.bootstrapper.releng</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<prerequisites>
+		<maven>3.0</maven>
+	</prerequisites>
+	<properties>
+		<tycho-version>0.10.0</tycho-version>
+		<tycho-groupid>org.sonatype.tycho</tycho-groupid>
+	</properties>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>${tycho-groupid}</groupId>
+				<artifactId>tycho-maven-plugin</artifactId>
+				<version>${tycho-version}</version>
+				<extensions>true</extensions>
+			</plugin>
+			<plugin>
+				<groupId>${tycho-groupid}</groupId>
+				<artifactId>target-platform-configuration</artifactId>
+				<version>${tycho-version}</version>
+				<configuration>
+					<resolver>p2</resolver>
+					<environments>
+ 						<environment>
+							<os>win32</os>
+							<ws>win32</ws>
+							<arch>x86</arch>
+						</environment>
+						<environment>
+							<os>linux</os>
+							<ws>gtk</ws>
+							<arch>x86</arch>
+						</environment>
+						<environment>
+							<os>macosx</os>
+							<ws>cocoa</ws>
+							<arch>x86_64</arch>
+						</environment>
+					</environments>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+	<modules>
+		<module>../com.example.app.bootstrapper.product</module>
+		<module>../com.example.app.bootstrapper.feature</module>
+		<module>../com.example.app.bootstrapper</module>
+		<module>../com.example.app.bootstrapper.test</module>
+	</modules>
+	<pluginRepositories>
+		<pluginRepository>
+			<id>maven-repository</id>
+			<url>http://localhost:8080/local-maven-repository</url>
+		</pluginRepository>
+	</pluginRepositories>
+	<repositories>
+		<repository>
+			<id>base-p2-repository</id>
+			<layout>p2</layout>
+			<url>http://localhost:8080/local-p2-repository</url>
+		</repository>
+		<repository>
+			<id>maven-repository</id>
+			<url>http://localhost:8080/local-maven-repository</url>
+		</repository>	
+	</repositories>
+</project>

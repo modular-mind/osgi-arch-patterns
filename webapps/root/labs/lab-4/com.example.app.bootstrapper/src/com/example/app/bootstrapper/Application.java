@@ -52,10 +52,7 @@ public class Application implements IApplication {
 	public Object start(IApplicationContext context) throws Exception {
 		Display display = PlatformUI.createDisplay();
 		try {
-			if (installNewFeature()) {
-				return IApplication.EXIT_RESTART;
-			}
-			
+			if (installNewFeature()) return IApplication.EXIT_RESTART;
 			int returnCode = PlatformUI.createAndRunWorkbench(display, new ApplicationWorkbenchAdvisor());
 			if (returnCode == PlatformUI.RETURN_RESTART)
 				return IApplication.EXIT_RESTART;
@@ -84,8 +81,17 @@ public class Application implements IApplication {
 	}	
 	
 	private static final String JUSTUPDATED = "justUpdated";
-	private static final String UPDATE_SITE_URL = "http://localhost:8080/labs/lab-4/com.example.app.perspectives.p2/target/site";
+	private static final String UPDATE_SITE_URL = "updateSiteUrl";
 
+	/*
+	 * NOTE: The P2 code here is not production-ready, but simply
+	 * an example for how you could install Features from within your
+	 * Application.
+	 *
+	 * Creating a fully-generic installer/updater is beyond the scope 
+	 * of this Tutorial, but watch bug#337016 for details on an 
+	 * initiative to make this easy.
+	 */
 	private boolean installNewFeature() throws ProvisionException {
 
 		/*
@@ -141,13 +147,22 @@ public class Application implements IApplication {
 		ProvisioningSession session = new ProvisioningSession(agent);
 
 		/*
+		 * Get update site url from system argument.
+		 */
+		String updateSiteUrl = System.getProperty(UPDATE_SITE_URL);
+		if (updateSiteUrl == null || updateSiteUrl.isEmpty()) {
+			return new Status(Status.ERROR, Activator.PLUGIN_ID,
+					"No udpate site URL specified. Pass -DupdateSiteUrl as a system argument.");
+		}
+
+		/*
 		 * Load the metadata repository to be searched for new feature.
 		 */
 		IMetadataRepositoryManager manager = (IMetadataRepositoryManager) agent
 				.getService(IMetadataRepositoryManager.SERVICE_NAME);
 		IMetadataRepository metadataRepo;
 		try {
-			metadataRepo = manager.loadRepository(new URI(UPDATE_SITE_URL),
+			metadataRepo = manager.loadRepository(new URI(updateSiteUrl),
 					new NullProgressMonitor());
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -161,7 +176,7 @@ public class Application implements IApplication {
 		IArtifactRepositoryManager artifactManager = (IArtifactRepositoryManager) agent
 				.getService(IArtifactRepositoryManager.SERVICE_NAME);
 		try {
-			artifactManager.loadRepository(new URI(UPDATE_SITE_URL),
+			artifactManager.loadRepository(new URI(updateSiteUrl),
 					new NullProgressMonitor());
 		} catch (Exception e) {
 			e.printStackTrace();

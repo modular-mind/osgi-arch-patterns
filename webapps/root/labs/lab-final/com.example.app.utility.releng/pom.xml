@@ -41,7 +41,7 @@
 	<pluginRepositories>
 		<pluginRepository>
 			<id>maven-repository</id>
-			<url>http://localhost:8080/local-maven-repository</url>
+			<url>http://localhost:8080/local-maven-repository/repository</url>
 		</pluginRepository>
 	</pluginRepositories>
 	<repositories>
@@ -52,7 +52,7 @@
 		</repository>
 		<repository>
 			<id>maven-repository</id>
-			<url>http://localhost:8080/local-maven-repository</url>
+			<url>http://localhost:8080/local-maven-repository/repository</url>
 		</repository>	
 	</repositories>
 </project>

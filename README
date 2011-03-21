@@ -11,6 +11,10 @@ IMPORTANT: Use Chrome, Firefox, or Safari if you want everything to work.
 How to use this:
 ----------------
 
+IMPORTANT
+
+Make sure that there are no spaces in the path to which this archive has been extracted. A bug in the Maven Tycho publishing process will cause problems if you have spaces in your path.
+
 To use this distribution, first start the Jetty web server using:
 
    java -jar start.jar
